@@ -9,4 +9,7 @@ class TriangularPrism(Triangle):
         return '3D'
 
     def volume(self):
-        return super().square() * self.height
+        base_area = super().square()
+        if base_area is None:
+            return None
+        return base_area * self.height

@@ -1,5 +1,5 @@
 from Figure import Figure
-from math import sqrt
+import math
 
 class Triangle(Figure):
     def __init__(self, a, b, c):
@@ -14,5 +14,7 @@ class Triangle(Figure):
         return self.a + self.b + self.c
 
     def square(self):
-        s = self.perimeter() / 2
-        return sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
+        if self.a + self.b <= self.c or self.a + self.c <= self.b or self.b + self.c <= self.a:
+            return None  # Трикутник не існує
+        s = (self.a + self.b + self.c) / 2
+        return math.sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
