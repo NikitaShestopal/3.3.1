@@ -1,0 +1,10 @@
+                          Cone   20    2 
+                       Trapeze    8   25    9    4 
+             TriangularPyramid   21   10 
+                     Rectangle    5   11 
+                          Ball   24 
+                 Parallelogram   25    8   21 
+                       Trapeze   19    9   16   25 
+           QuadrangularPyramid   14   18   22 
+                      Triangle   11   25   17 
+                          Cone   15    9
