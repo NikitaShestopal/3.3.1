@@ -1,6 +1,6 @@
 from Loaderapparation import apparation
 
-file_name = 'input01.txt'
+file_name = 'input03.txt'
 figures = apparation.read_figures(file_name)
 max_volume_figure = apparation.find_max_volume_figure(figures)
 
